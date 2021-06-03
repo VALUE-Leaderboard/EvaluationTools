@@ -133,9 +133,9 @@ def eval_tvc(submit_dir, truth_dir, output_dir, val_only=True):
         )
         if not val_only:
             file_paths.update(
-                test_public=dict(submission=join(submit_dir, "tvc_test_public_predictions.jsonl"),
-                                 solution=join(truth_dir, "tvc_test_public_archive.jsonl"),
-                                 output=join(output_dir, "tvc_test_public_metrics.json"))
+                test=dict(submission=join(submit_dir, "tvc_test_predictions.jsonl"),
+                          solution=join(truth_dir, "tvc_test_gt.jsonl"),
+                          output=join(output_dir, "tvc_test_metrics.json"))
             )
     else:
         raise ValueError

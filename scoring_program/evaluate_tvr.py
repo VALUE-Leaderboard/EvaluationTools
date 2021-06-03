@@ -318,9 +318,9 @@ def eval_tvr(submit_dir, truth_dir, output_dir, val_only=True):
         )
         if not val_only:
             file_paths.update(
-                test_public=dict(submission=join(submit_dir, "tvr_test_public_predictions.json"),
-                                 solution=join(truth_dir, "tvr_test_public_archive.jsonl"),
-                                 output=join(output_dir, "tvr_test_public_metrics.json"))
+                test=dict(submission=join(submit_dir, "tvr_test_predictions.json"),
+                          solution=join(truth_dir, "tvr_test_gt.jsonl"),
+                          output=join(output_dir, "tvr_test_metrics.json"))
             )
         video2dur_idx_path = join(truth_dir, "tvr_video2dur_idx.json")
     else:

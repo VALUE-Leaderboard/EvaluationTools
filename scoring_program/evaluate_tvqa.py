@@ -88,9 +88,9 @@ def eval_tvqa(submit_dir, truth_dir, output_dir, val_only=True):
         print("val_only", val_only)
         if not val_only:
             file_paths.update(
-                test_public=dict(
-                    submission=join(submit_dir, "tvqa_test_public_predictions.json"),
-                    solution=join(truth_dir, "tvqa_test_public_solution.json")
+                test=dict(
+                    submission=join(submit_dir, "tvqa_test_predictions.json"),
+                    solution=join(truth_dir, "tvqa_test_solution.json")
                 )
             )
     else:

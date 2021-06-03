@@ -61,16 +61,16 @@ TASK2SPLIT_NAME["val"] = dict(
     vatex_en_c="test_public"
 )
 TASK2SPLIT_NAME["test"] = dict(
-    tvr="test_public",
+    tvr="test",
     how2r="test_public",
     vatex_en_r="test_public",
     yc2r="test",
-    tvqa="test_public",
+    tvqa="test",
     vlep="test",
     violin="test_private",
     how2qa="test_public",
     yc2c="test",
-    tvc="test_public",
+    tvc="test",
     vatex_en_c="test_private"
 )
 
