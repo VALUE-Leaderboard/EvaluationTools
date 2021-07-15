@@ -12,13 +12,13 @@ git clone git@github.com:VALUE-Leaderboard/EvaluationTools.git
 
 To evaluate our provided sample predictions at [./submission_data_sample](./submission_data_sample), please run:
 ```
-bash scripts/scripts/run_local_all_tasks.sh
+bash scripts/run_local_all_tasks.sh
 ```
 
 This evaluates all the task predictions for their respective validation split. Note that the test annotations are reserved, you have to submit to our CodaLab leaderboard for evaluation. The output will be written into `tmp_output`. To evaluate only a single task, please run:
 
 ```
-bash scripts/run_local_all_tasks.sh
+bash scripts/run_local_single_task.sh
 ```
 
 
